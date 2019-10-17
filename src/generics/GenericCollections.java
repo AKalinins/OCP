@@ -14,5 +14,18 @@ public class GenericCollections {
         System.out.println(list.get(1) instanceof Integer);
         System.out.println(list.get(1) instanceof Object);
         System.out.println(list);
+        System.out.println();
+
+        List<Number> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(1.0);
+        System.out.println(list.get(0) instanceof Integer);
+        System.out.println(list.get(0) instanceof Long);
+        System.out.println(list.get(1) instanceof Float);
+        System.out.println(list.get(1) instanceof Double);
+
+        List<? super Integer> numbersGen = new ArrayList<>();
+        numbersGen.add(1);
+        numbersGen.add(1);
     }
 }
